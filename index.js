@@ -8,7 +8,8 @@ var app = express();
 
 //Define a function to run when someone accesses our site
 app.get('/',function(req,res){
-    res.send('Hello world again');
+ //   res.send('Hello world again');
+ res.sendfile('__dirname'+'/frontend/html/index.html')
 })
 //Run application on a port
 var port = process.env.PORT || 3000;
